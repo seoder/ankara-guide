@@ -1,0 +1,94 @@
+/* styles.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* İçerikleri yukarıdan başlat */
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    position: relative; /* Konumlandırma için relative ayarlıyoruz */
+}
+
+.logout-button {
+    position: absolute; /* Konumlandırmayı absolute yapıyoruz */
+    bottom: 20px; /* Alt kısımdan 20px yukarıda */
+    right: 20px; /* Sağ kısımdan 20px içeride */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545; /* Kırmızı arka plan */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px; /* Maksimum genişlik */
+    height: 150px; /* Yükseklik ayarı */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black; /* Yazı rengi siyah */
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Mavi arka plan */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none; /* Madde işaretlerini kaldır */
+    padding: 0; /* İç boşluğu kaldır */
+}
+
+h1, h2, p {
+    margin-bottom: 20px; /* Alt boşluk */
+    color: black; /* Tüm başlık ve paragrafların rengi siyah */
+}
+
+.message {
+    margin-top: 10px;
+    color: green; /* Mesajın rengi yeşil (isteğe bağlı) */
+}
+
+/* Yazılar için siyah rengi ayarlama */
+li {
+    color: black; /* Yazı rengi siyah */
+}
+
+/* Blog içerik alanı için kutu stil ayarları */
+.blog-container {
+    border: 1px solid #ccc; /* Kutunun kenar çizgisi */
+    border-radius: 5px; /* Kenarları yuvarlat */
+    padding: 20px; /* İç boşluk */
+    margin-top: 20px; /* Üstte boşluk */
+    background-color: #fff; /* Arka plan rengi */
+    display: flex; /* Flexbox ile ortalamak için */
+    flex-direction: column; /* Dikey yönde yerleştirme */
+    align-items: center; /* Yatayda ortalama */
+}
+
+.no-posts {
+    text-align: center; /* Metni ortala */
+    color: black; /* Yazı rengi */
+}
+.go-back-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Mavi arka plan */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+/* app/page.module.css */
+.container {
+    padding: 3rem;
+    text-align: center;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    text-align: left; /* Sola hizalama */
+  }
+  
+  .list li {
+    margin: 0.5rem 0;
+  }
+  
+  .backLink {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .backLink:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,27 @@
+/* Arka Plan Rengini Değiştiren Butonlar */
+.buttonContainer {
+    margin-top: 2rem; /* Butonların üstünde boşluk bırak */
+    display: flex; /* Butonları yatayda hizala */
+    justify-content: center; /* Yatayda ortalama */
+    gap: 1rem; /* Butonlar arasında boşluk */
+  }
+  
+  .colorButton {
+    background-color: #0070f3; /* Buton arka plan rengi */
+    color: white; /* Buton yazı rengi */
+    padding: 0.5rem 1rem; /* Buton için iç boşluk */
+    border: none; /* Kenar çizgisi yok */
+    border-radius: 8px; /* Yuvarlatılmış köşeler */
+    font-size: 1rem; /* Yazı boyutu */
+    cursor: pointer; /* Fareyle üzerine gelindiğinde işaretçi değişsin */
+    transition: background-color 0.3s ease; /* Arka plan rengi geçişi */
+  }
+  
+  .colorButton:hover {
+    background-color: #005bb5; /* Hover durumunda arka plan rengi değişimi */
+  }
+  
+  .colorButton:active {
+    background-color: #004494; /* Tıklama anında arka plan rengi değişimi */
+  }
+  

@@ -1,0 +1,100 @@
+@keyframes backgroundAnimation {
+  0% { background-color: #f4f4f9; }
+  25% { background-color: #ffe4e1; }
+  50% { background-color: #e0ffff; }
+  75% { background-color: #f0e68c; }
+  100% { background-color: #f4f4f9; }
+}
+
+/* Ana konteyner */
+.container {
+  padding: 3rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  animation: backgroundAnimation 10s infinite; /* Arka plan için animasyon */
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: blue; /* Başlık rengi tam siyah */
+}
+
+
+/* İçerik alanı */
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Kutu arası boşluk */
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem; /* İçerik için boşluk */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 220px; /* Genişliği küçült */
+  height: 180px; /* Yüksekliği küçült */
+  display: flex; /* Flexbox ile içerik hizalama */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0070f3; /* Bağlantı rengi */
+  text-decoration: none;
+}
+
+.card:hover a {
+  color: #005bb5; /* Hover'da değişen bağlantı rengi */
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .grid {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .card {
+      width: 100%;
+      height: auto; /* Mobilde otomatik yükseklik */
+  }
+}
+
+/* Sosyal Medya Bağlantıları */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* İkonlar arasındaki boşluk */
+  margin-top: 2rem; /* Başlığın altındaki boşluk */
+}
+
+.socials a {
+  font-size: 1.5rem; /* İkon boyutu */
+  color: #333; /* İkon rengi */
+  text-decoration: none; /* Alt çizgi kaldır */
+}
+
+.socials a:hover {
+  color: #0070f3; /* Hover'da değişen renk */
+}

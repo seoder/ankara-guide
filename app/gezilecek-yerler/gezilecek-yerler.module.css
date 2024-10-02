@@ -1,0 +1,96 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.imageWrapper {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* Yerel sınıflar eklendi */
+.imageTitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.imageDescription {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 10px 10px;
+  line-height: 1.5;
+}
+
+.backButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.backButton:hover {
+  background-color: #005bb5;
+}
+
+/* Arka plan rengi butonları ve ortalamak için ekleme */
+.buttonContainer {
+  display: flex; /* Flexbox ile düzenle */
+  justify-content: center; /* Butonları yatayda ortala */
+  margin-top: 20px; /* Üstten boşluk ekle */
+}
+
+.colorButton {
+  padding: 10px 20px; /* Butonun iç boşluğu */
+  margin: 0 10px; /* Butonlar arasında boşluk */
+  border: none; /* Kenar çizgisini kaldır */
+  border-radius: 5px; /* Kenarları yuvarla */
+  color: white; /* Yazı rengi */
+  cursor: pointer; /* İmleci el şekline getir */
+  transition: background-color 0.3s; /* Geçiş efekti */
+}
+
+.colorButton:hover {
+  opacity: 0.8; /* Üzerine gelindiğinde opaklık azalt */
+}
+
+/* Buton arka plan renkleri */
+.colorButton:nth-child(1) {
+  background-color: red; /* Kırmızı */
+}
+
+.colorButton:nth-child(2) {
+  background-color: green; /* Yeşil */
+}
+
+.colorButton:nth-child(3) {
+  background-color: blue; /* Mavi */
+}

@@ -1,0 +1,95 @@
+/* Ana konteyner */
+.container {
+  padding: 2rem;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Başlık stili */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* İçerik alanı */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Video stili */
+.videoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Video için sınıf */
+.video {
+  width: 100%; /* Videoyu konteynırın tamamını kaplayacak şekilde ayarlıyoruz */
+  height: 400px; /* Yüksekliği artırarak videoyu daha geniş hale getiriyoruz */
+  border-radius: 10px;
+  max-width: 800px; /* Maksimum genişlik ayarı */
+  margin: 0 auto; /* Ortalamak için */
+}
+
+/* Arka Plan Rengini Değiştiren Butonlar */
+.buttonContainer {
+  display: flex; /* Butonları yan yana dizmek için flex kullan */
+  justify-content: center; /* Butonları yatay olarak ortala */
+  gap: 10px; /* Butonlar arasında boşluk bırak */
+  margin-bottom: 2rem; /* Butonların altında boşluk bırak */
+}
+
+/* Buton stili */
+.colorButton {
+  padding: 1rem 2rem; /* Butonların içindeki metin için boşluk bırak */
+  border: none; /* Kenarlık yok */
+  border-radius: 5px; /* Köşeleri yuvarla */
+  cursor: pointer; /* İmleç değiştirme */
+  font-size: 1rem; /* Yazı boyutu */
+  transition: background-color 0.3s; /* Renk değişimi için geçiş efekti */
+}
+
+.colorButton:hover {
+  opacity: 0.8; /* Üzerine gelindiğinde opaklığı azalt */
+}
+
+/* Renk Butonları için Arka Plan Renkleri */
+.colorButton:nth-child(1) {
+  background-color: red; /* Kırmızı */
+}
+
+.colorButton:nth-child(2) {
+  background-color: green; /* Yeşil */
+}
+
+.colorButton:nth-child(3) {
+  background-color: blue; /* Mavi */
+}
+
+/* Geri dön butonu */
+.backButton {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #005bb5;
+}

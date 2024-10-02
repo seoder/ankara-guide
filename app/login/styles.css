@@ -1,0 +1,73 @@
+/* Tam siyah arka plan için background-color'u #000000 olarak değiştirin */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000000; /* Siyah arka plan */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: white; /* Genel metin rengini beyaz yapıyoruz */
+}
+
+.heading {
+  margin-bottom: 20px;
+  color: #ffffff; /* Başlık rengi beyaz */
+}
+
+.input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: black; /* Kullanıcı adı ve şifre alanı için metin rengi siyah */
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, transform 0.3s; /* Animasyon ekliyoruz */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Hover durumunda arka plan rengi */
+  transform: scale(1.05); /* Hover durumunda boyutunu büyütüyoruz */
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  color: #0056b3; /* Hover durumunda rengi değiştir */
+}
+
+/* Yazı rengi */
+.paragraph {
+  margin-top: 20px;
+  font-size: 14px;
+  color: red; /* Yazının rengini buradan değiştirebilirsiniz */
+}
+
+/* Geri Dön Butonu Stili */
+.go-back-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: red; 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

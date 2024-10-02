@@ -1,0 +1,11 @@
+.weatherContainer {
+  position: fixed; /* Sabit pozisyon */
+  top: 20px; /* Üstten mesafe */
+  right: 20px; /* Sağdan mesafe */
+  background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam beyaz arka plan */
+  border-radius: 8px; /* Yuvarlatılmış köşeler */
+  padding: 15px; /* İçerik ile kenarlar arasında boşluk */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+  z-index: 1000; /* Üstte görünmesi için */
+  color: #333; /* Varsayılan yazı rengi */
+}
